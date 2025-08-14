@@ -8,8 +8,9 @@ const Header = () => {
         lg:rounded-b-md
         text-2xl font-medium
         text-center
-        bg-white
-        shadow-sm
+        text-white
+        bg-black/80
+        backdrop-blur-sm
         transition-all
       "
     >
