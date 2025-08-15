@@ -9,7 +9,8 @@ const Header = () => {
         text-2xl font-medium
         text-center
         text-zinc-600 hover:text-zinc-800
-        bg-white/50
+        bg-white/70
+        shadow-sm
         backdrop-blur-xs
         transition-all
       "

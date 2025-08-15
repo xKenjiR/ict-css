@@ -4,3 +4,15 @@
 body {
   font-family: "Open Sans" sans-serif;
 }
+
+.tab {
+  @apply me-2 inline-block p-4 border-b-2 border-transparent hover:text-zinc-600 hover:border-zinc-300 dark:hover:text-zinc-300 cursor-pointer select-none transition-all;
+}
+
+.tab.active {
+  @apply text-blue-400 border-b-2 border-blue-400 dark:text-blue-300 dark:border-blue-300;
+}
+
+.hl {
+  @apply text-zinc-700 font-bold;
+}
