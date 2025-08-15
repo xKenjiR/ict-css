@@ -2,15 +2,15 @@ const Header = () => {
   return (
     <div
       className="
-        fixed
+        fixed z-10
         w-full lg:w-[90%]
         p-3 lg:ml-[5%]
         lg:rounded-b-md
         text-2xl font-medium
         text-center
-        text-white
-        bg-black/80
-        backdrop-blur-sm
+        text-zinc-600 hover:text-zinc-800
+        bg-white/50
+        backdrop-blur-xs
         transition-all
       "
     >

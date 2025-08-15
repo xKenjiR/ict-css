@@ -1,26 +1,20 @@
-import windows from "../assets/windows.png";
-import bg from "../assets/heroimage.jpg";
+import windows from "../../assets/windows.png";
 
 const Hero = () => {
   return (
-    <div>
-      <img
-        src={bg}
-        className="
-          fixed -z-1
-          h-[155vw] md:h-[40vw] lg:h-[35vw]
-          w-full
-          object-cover
-          transition-all
-        "
-      />
+    <div
+      className="
+        relative
+        bg-linear-to-t from-blue-400 to-sky-200
+      "
+    >
       <div
         className="
         w-[80%] ml-[10%]
         lg:w-[70%] lg:ml-[15%]
         grid md:grid-cols-2 gap-20
         justify-center align-center
-        pt-25
+        pt-25 pb-10 md:pb-40
       "
       >
         <div
@@ -32,6 +26,8 @@ const Hero = () => {
             src={windows}
             className="
             w-[50%] md:w-[50%]
+            drop-shadow-xl
+            drop-shadow-black/50
           "
           />
         </div>
@@ -43,12 +39,12 @@ const Hero = () => {
           text-center md:text-start
           text-white
           text-shadow-sm
-          text-shadow-black
-        "
+          text-shadow-black/20
+          "
         >
           <h1
             className="
-            text-lg lg:text-3xl
+            text-2xl lg:text-3xl
             font-bold
             text-nowrap
           "
@@ -57,12 +53,13 @@ const Hero = () => {
           </h1>
           <p
             className="
-            lg:text-lg
+            text-lg lg:text-lg
+            font-medium
           "
           >
-            A server operating system designed as a cloud-ready platform,
-            focusing on security and enabling hybrid cloud scenarios by
-            connecting on-premises environments with Azure services.
+            The operating system that bridges on-premises environments with
+            Azure services enabling hybrid scenarios maximizing existing
+            investments.
           </p>
         </div>
       </div>
