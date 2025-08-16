@@ -212,7 +212,7 @@ Error generating stack: `+e.message+`
         w-[80%] ml-[10%]\r
         mt-5 md:-mt-30\r
         lg:w-[70%] lg:ml-[15%]\r
-      `,"data-aos":"fade-up",children:W0.map(O=>s.jsx(k0,{title:O.title,children:O.text}))}),F0="/ics-css/assets/windows-CQ4CTuNf.png",I0=()=>s.jsx("div",{className:`\r
+      `,"data-aos":"fade-up",children:W0.map(O=>s.jsx(k0,{title:O.title,children:O.text}))}),F0="/ict-css/assets/windows-CQ4CTuNf.png",I0=()=>s.jsx("div",{className:`\r
         relative\r
         bg-linear-to-t from-blue-400 to-sky-200\r
       `,children:s.jsxs("div",{className:`\r
