@@ -16,3 +16,7 @@ body {
 .hl {
   @apply text-zinc-700 font-bold;
 }
+
+.sub-list {
+  @apply flex flex-col gap-2 opacity-80 list-disc text-xs md:text-sm;
+}

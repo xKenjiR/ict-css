@@ -8,7 +8,7 @@ const DCHP = () => {
   return (
     <div
       className="
-        bg-linear-to-b from-white to-zinc-200
+        bg-linear-to-b from-white to-blue-100
       "
     >
       <div
@@ -24,8 +24,8 @@ const DCHP = () => {
           className="
             md:mt-20
             text-center
-            gap-3
           "
+          data-aos="fade-right"
         >
           <h1
             className="
@@ -38,6 +38,7 @@ const DCHP = () => {
           </h1>
           <h2
             className="
+            mt-2
             text-lg font-medium
             text-zinc-600
           "
@@ -50,7 +51,11 @@ const DCHP = () => {
             p-5 pb-10 rounded-lg
             bg-white
             shadow-sm
+            shadow-black/30
+            hover:scale-105
+            transition-transform
           "
+          data-aos="fade-left"
         >
           <div
             className="
@@ -131,11 +136,11 @@ const DCHP = () => {
                   On the <span className="hl">Select server roles</span> page,
                   select the <span className="hl">DHCP Server</span> checkbox,
                   and then select <span className="hl">Next</span>.
-                  <ol>
-                    <li key={1} className="opacity-90">
-                      a. You're prompted to add features that are required for
-                      DHCP Server. If you're happy with the default settings,
-                      select <span className="hl">Add Features</span>.
+                  <ol className="sub-list">
+                    <li key={1}>
+                      You're prompted to add features that are required for DHCP
+                      Server. If you're happy with the default settings, select{" "}
+                      <span className="hl">Add Features</span>.
                     </li>
                   </ol>
                 </li>
@@ -153,9 +158,8 @@ const DCHP = () => {
                   On the{" "}
                   <span className="hl">Confirm installation selections</span>{" "}
                   page, review the selected roles and features. When you're
-                  finished, select
-                  <span className="hl">Install</span> to begin the installation
-                  process.
+                  finished, select <span className="hl">Install</span> to begin
+                  the installation process.
                 </li>
                 <li key={10}>
                   Once the installation is complete, select{" "}

@@ -11,7 +11,7 @@ const DNS = () => {
         w-[80%] ml-[10%]
         lg:w-[70%] lg:ml-[15%]
         grid md:grid-cols-2 gap-5
-        md:pt-25 pb-10 md:pb-20
+        md:pt-20 pb-10 md:pb-20
         mt-10 md:mt-0
       "
     >
@@ -20,8 +20,8 @@ const DNS = () => {
             md:order-last
             md:mt-20
             text-center
-            gap-3
           "
+        data-aos="fade-left"
       >
         <h1
           className="
@@ -34,6 +34,7 @@ const DNS = () => {
         </h1>
         <h2
           className="
+            mt-2
             text-lg font-medium
             text-zinc-600
           "
@@ -46,7 +47,11 @@ const DNS = () => {
             p-5 pb-10 rounded-lg
             bg-white
             shadow-sm
+            shadow-black/30
+            hover:scale-105
+            transition-transform
           "
+        data-aos="fade-right"
       >
         <div
           className="
@@ -129,9 +134,9 @@ const DNS = () => {
                 On the <span className="hl">Select server roles</span> page,
                 select the <span className="hl">DNS Server</span> checkbox, and
                 then select <span className="hl">Next</span>.
-                <ol>
-                  <li key={1} className="opacity-90">
-                    a. You're prompted to add features that are required for DNS
+                <ol className="list-disc">
+                  <li key={1}>
+                    You're prompted to add features that are required for DNS
                     Server. If you're happy with the default settings, select{" "}
                     <span className="hl">Add Features</span>.
                   </li>
@@ -151,9 +156,8 @@ const DNS = () => {
                 On the{" "}
                 <span className="hl">Confirm installation selections</span>{" "}
                 page, review the selected roles and features. When you're
-                finished, select
-                <span className="hl">Install</span> to begin the installation
-                process.
+                finished, select <span className="hl">Install</span> to begin
+                the installation process.
               </li>
               <li key={10}>
                 Once the installation is complete, select{" "}

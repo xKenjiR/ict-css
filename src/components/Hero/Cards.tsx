@@ -25,6 +25,7 @@ const Cards = () => {
         mt-5 md:-mt-30
         lg:w-[70%] lg:ml-[15%]
       "
+      data-aos="fade-up"
     >
       {descriptions.map((desc) => (
         <Card title={desc.title}>{desc.text}</Card>
